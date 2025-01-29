@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Envelope + Letter (Open/Close on Click)</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="envelope-wrapper">
-            <div class="envelope">
-                <div class="letter">
-                    <div class="text">
-                        <strong>Miss Ritika</strong>
-                        <p>
-                            I hope this message finds you well. I'm writing to express my sincerest apologies. I'm sorry !!
-                        </p>
-                        <br>
-                        <p>-from sabin</p>
-                    </div>
-                </div>
+      <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="letter">
+            <div class="text">
+              <strong>Miss Ritika</strong>
+              <p>
+                I hope message finds you well. I'm writing to express my
+                sincerest apologies. I'm sorry !!
+              </p>
+              <br />
+              <p>-from sabin</p>
             </div>
-            <div class="heart">
-                
-            </div>
-            <h6>click the above heart</h6>
+          </div>
         </div>
+        <div class="heart"></div>
+        <h6>click the above heart</h6>
+      </div>
     </div>
     <script>
-        const envelope = document.querySelector('.envelope-wrapper');
-        envelope.addEventListener('click', () => {
-            envelope.classList.toggle('flap');
-        });
+      const envelope = document.querySelector(".envelope-wrapper");
+      envelope.addEventListener("click", () => {
+        envelope.classList.toggle("flap");
+      });
     </script>
-</body>
+  </body>
 </html>
